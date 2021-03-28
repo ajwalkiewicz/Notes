@@ -271,12 +271,360 @@ This cheatsheet base on https://www.w3schools.com/python/default.asp
         | [upper()](https://www.w3schools.com/python/ref_string_upper.asp) | Converts a string into upper case |
         | [zfill()](https://www.w3schools.com/python/ref_string_zfill.asp) | Fills the string with a specified number of 0 values at the beginning |
         
+8.  Booleans
+    `True` or `False`
+    
+    1.  Example
+        
+        ```Python
+        print(10 > 9)
+        print(10 == 9)
+        print(10 < 9)
+        ```
+    2.  True Values
+        
+        ```Python
+        bool("abc")
+        bool(123)
+        bool(\["apple", "cherry", "banana"\])
+        ```
+    3.  False Values
+        
+        ```Python
+        bool(False)
+        bool(None)
+        bool(0)
+        bool("")
+        bool(())
+        bool(\[\])
+        bool({})
+        ```
+9.  Operators
+    
+    1.  Arithmetic Operators
+        
+        |     |     |     |
+        | --- | --- | --- |
+        | +   | Addition | Addition |
+        | -   | Subtraction | x - y |
+        | *   | Multiplication | x * y |
+        | /   | Division | x / y |
+        | %   | Modulus | x % y |
+        | **  | Exponentiation | x ** y |
+        | //  | Floor division | x // y |
+        
+        ```
+        print(5 + 5)
+        print(5 - 5)
+        print(5 * 5)
+        print(5 / 5)
+        print(5 % 5)
+        print(6 // 5)
+        ```
+    2.  Assignment Operators
+        
+        |     |     |     |
+        | --- | --- | --- |
+        | =   | x = 5 | x = 5 |
+        | +=  | x += 3 | x = x + 3 |
+        | -=  | x -= 3 | x = x - 3 |
+        | *=  | x *= 3 | x = x * 3 |
+        | /=  | x /= 3 | x = x / 3 |
+        | %=  | x %= 3 | x = x % 3 |
+        | //= | x //= 3 | x = x // 3 |
+        | **= | x **= 3 | x = x ** 3 |
+        | &=  | x &= 3 | x = x & 3 |
+        | \|= | x \|= 3 | x = x \| 3 |
+        | ^=  | x ^= 3 | x = x ^ 3 |
+        | >>= | x >>= 3 | x = x >> 3 |
+        | <<= | x <<= 3 | x = x << 3 |
+        
+        ```Python
+        x = 10
+        print(x)
+        x = x + 3
+        print(x)
+        x = x - 3
+        print(x)
+        x = x * 3
+        print(x)
+        x = x / 3
+        print(x)
+        x = x % 3
+        print(x)
+        x = x // 3
+        print(x)
+        x = x ** 3
+        print(x)
+        ```
+    3.  Comparison Operators
+        
+        | operator | decryption | example |
+        | --- | --- | --- |
+        | ==  | Equal | x == y |
+        | !=  | Not equal | x != y |
+        | >   | Greater than | x > y |
+        | <   | Less than | x < y |
+        | >=  | Greater than or equal to | x >= y |
+        | <=  | Less than or equal to | x <= y |
+        
+    4.  Logical Operators
+        
+        | operator | decryption | example |
+        | --- | --- | --- |
+        | and | Returns True if both statements are true | x < 5 and  x < 10 |
+        | or  | Returns True if one of the statements is true | x < 5 or x < 4 |
+        | not | Reverse the result, returns False if the result is true | not(x < 5 and x < 10) |
+        
+    5.  Identity Operators
+        
+        |     | decryption |     |
+        | --- | --- | --- |
+        | is  | Returns True if both variables are the same object | x is y |
+        | is not | Returns True if both variables are not the same object | x is not y |
+        
+    6.  Membership Operators
+        
+        | operator | decryption | example |
+        | --- | --- | --- |
+        | in  | Returns True if a sequence with the specified value is present in the object | x in y |
+        | not in | Returns True if a sequence with the specified value is not present in the object | x not in y |
+        
+    7.  Bitewise Operators
+        
+        |     | operator | descryption |
+        | --- | --- | --- |
+        | &   | AND | Sets each bit to 1 if both bits are 1 |
+        | \|  | OR  | Sets each bit to 1 if one of two bits is 1 |
+        | ^   | XOR | Sets each bit to 1 if only one of two bits is 1 |
+        | ~   | NOT | Inverts all the bits |
+        | <<  | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off |
+        | >>  | Signed right shift | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off |
+        
+10. Lists
+    
+    1.  Features:
+        1.  ordered
+        2.  changable
+        3.  duplicate values
+    
+    ```Python
+    thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+    print(thislist)
+    ```
+    
+    2.  List Length
+        1.  `len()`
+    
+    ```Python
+    my_list = ["apple", "banana", "cherry", "apple", "cherry"]
+    print(len(my_list))
+    ```
+    
+    4.  Data types
+    
+    ```Python
+    list1 = ["apple", "banana", "cherry"]
+    list2 = [1, 5, 7, 9, 3]
+    list3 = [True, False, False]
+    ```
+    
+    5.  list() constructor
+    
+    ```Python
+    thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+    print(thislist)
+    ```
+    
+    6.  Access list items
+    
+    ```Python
+    thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+    print(thislist[1])
+    print(thislist[-1])
+    
+    print(thislist[2:5])
+    print(thislist[:4])
+    print(thislist[2:])
+    print(thislist[-4:-1])
+    ```
+    
+    1.  check if item exist in list
+    
+    ```Python
+    "banna" in thislist 
+    ```
+    9.  change list items
+        
+        ```Python
+        thislist\[1\] = "blackcurrant"
+        print(thislist)
+        
+        thislist\[1:3\] = \["blackcurrant", "watermelon"\]
+        print(thislist)
+        ```
+    10. add list items
+        
+        1.  `.append()`
+        
+        ```Python
+        thislist = ["apple", "banana", "cherry"]
+        thislist.append("orange")
+        print(thislist)
+        ```
+        
+        2.  `.insert()`
+        
+        ```Python
+        thislist = ["apple", "banana", "cherry"]
+        thislist.insert(2, "watermelon")
+        print(thislist)
+        ```
+        
+        3.  `.extend()`
+        
+        ```Python
+        thislist = ["apple", "banana", "cherry"]
+        tropical = ["mango", "pineapple", "papaya"]
+        thislist.extend(tropical)
+        print(thislist)
+        ```
+    11. remove item
+        
+        1.  `.remove()`
+            The remove() method removes the specified item. Importan it removes only the first occurance of that item.
+        
+        ```Python
+        thislist = ["apple", "banana", "cherry"]
+        thislist.remove("banana")
+        print(thislist)
+        ```
+        
+        2.  `.pop()`
+            The pop() method removes the specified index.
+        
+        ```Python
+        thislist = ["apple", "banana", "cherry"]
+        thislist.pop(1)
+        print(thislist)
+        
+        If you do not specify the index, the pop() method removes the last item.
+        
+        ```Python
+        thislist = ["apple", "banana", "cherry"]
+        thislist.pop()
+        print(thislist)
+        ```
+        3.  `.del()`
+            The del keyword also removes the specified index:
+            
+            ```Python
+            thislist = ["apple", "banana", "cherry"]
+            del thislist[0]
+            print(thislist)
+            del thislist 
+            ```
+        4.  `clear()`
+            The list still remains, but it has no content.
+            
+            ```Python
+            thislist = ["apple", "banana", "cherry"]
+            thislist.clear()
+            print(thislist)
+            ```
+    12. list comprehension
+        
+        ```Python
+        fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+        newlist = [x for x in fruits if "a" in x]
+        print(newlist) 
+        ```
+        
+        `newlist = [expression for item in iterable if condition == True]`
+        
+    13. sort list
+        
+        1.  `.sort()`
+        
+        ```Python
+        thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+        thislist.sort()
+        thislist.sort()
+        
+        thislist = [100, 50, 65, 82, 23]
+        thislist.sort()
+        print(thislist)
+        
+        thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+        thislist.sort(reverse = True)
+        print(thislist)
+        
+        thislist = [100, 50, 65, 82, 23]
+        thislist.sort(reverse = True)
+        print(thislist)
+        
+        # Case insensitivity
+        thislist = ["banana", "Orange", "Kiwi", "cherry"]
+        thislist.sort(key = str.lower)
+        print(thislist)
+        
+        # Reverse list
+        thislist = ["banana", "Orange", "Kiwi", "cherry"]
+        thislist.reverse()
+        print(thislist)
+        ```
+        
+        2.  `sorted()`
+        
+        ```Python
+        thislist = [2, 8, 12, 76, 90, 442]
+        sorted(thislist)
+        print(thislist)
+        ```
+    14. copy list
+        This is a tricky part. Lists have one space in memory.
+        Do some example
+        
+        ```Python
+        thislist = ["apple", "banana", "cherry"]
+        mylist = thislist.copy()
+        print(mylist)
+        ```
+    15. join lists
+        
+        1.  List concatenation
+        
+        ```Python
+        list1 = ["a", "b", "c"]
+        list2 = [1, 2, 3]
+        list3 = list1 + list2
+        print(list3) 
+        ```
+        
+        2.  List `.extend()`
+        
+        ```Python
+        list1 = ["a", "b" , "c"]
+        list2 = [1, 2, 3]
+        list1.extend(list2)
+        print(list1) 
+        ```
+    16. list methods
+        
+        | method | summary |
+        | --- | --- |
+        | [append()](https://www.w3schools.com/python/ref_list_append.asp) | Adds an element at the end of the list |
+        | [clear()](https://www.w3schools.com/python/ref_list_clear.asp) | Removes all the elements from the list |
+        | [copy()](https://www.w3schools.com/python/ref_list_copy.asp) | Returns a copy of the list |
+        | [count()](https://www.w3schools.com/python/ref_list_count.asp) | Returns the number of elements with the specified value |
+        | [extend()](https://www.w3schools.com/python/ref_list_extend.asp) | Add the elements of a list (or any iterable), to the end of the current list |
+        | [index()](https://www.w3schools.com/python/ref_list_index.asp) | Returns the index of the first element with the specified value |
+        | [insert()](https://www.w3schools.com/python/ref_list_insert.asp) | Adds an element at the specified position |
+        | [pop()](https://www.w3schools.com/python/ref_list_pop.asp) | Removes the element at the specified position |
+        | [remove()](https://www.w3schools.com/python/ref_list_remove.asp) | Removes the item with the specified value |
+        | [reverse()](https://www.w3schools.com/python/ref_list_reverse.asp) | Reverses the order of the list |
+        | [sort()](https://www.w3schools.com/python/ref_list_sort.asp) | Sorts the list |
 
-### 8\. Booleans
-
-### 9\. Operators
-
-### 10\. Lists
 
 ### 11\. Tuples
 
